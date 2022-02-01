@@ -1,10 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      { }
+
+      <Image source={require('./assets/18warrantylogo.svg')}
+      style = {{width : 180, height : 52}} />
+  
+     
+      <Text>Pre Coverage</Text>
+      <Text>Post Coverage</Text>
+      <Text>FAQs</Text>
+      <View style={styles.signin}>
+        <Button title="Sign In" />
+      </View>
       <StatusBar style="auto" />
     </View>
   );
@@ -12,9 +23,27 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
+    top: 12,
+    // flex: 1,
+    flexDirection: 'row',
+    // backgroundColor: '#000',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
   },
 });
+
+
+
+{/* <Button
+title="Outline Button"
+buttonStyle={{
+  borderColor: 'rgba(78, 116, 289, 1)',
+}}
+type="outline"
+titleStyle={{ color: 'rgba(78, 116, 289, 1)' }}
+containerStyle={{
+  width: 200,
+  marginHorizontal: 50,
+  marginVertical: 10,
+}}
+/> */}
